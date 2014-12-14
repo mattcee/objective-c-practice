@@ -10,6 +10,7 @@
 #import "reverseString.h"
 #import "linkedList.h"
 #import "node.h"
+#import "doublyLinkedList.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -30,9 +31,15 @@ int main(int argc, const char * argv[]) {
         [firstlist addToList:firstNumber];
         [firstlist addToList:secondNumber];
         [firstlist addToList:thirdNumber];
-        [firstlist printList];
-                                 
+       // [firstlist printList];
         
+        
+        doublyLinkedList *newList = [[doublyLinkedList alloc]init];
+        [newList addToList:firstNumber];
+        [newList addToList:secondNumber];
+        [newList addToList:thirdNumber];
+        [newList printFront];
+        [newList printBack];
         
 
         

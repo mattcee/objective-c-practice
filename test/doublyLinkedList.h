@@ -11,9 +11,9 @@
 
 @interface doublyLinkedList : NSObject
 
-@property dnode *head;
-@property dnode *tail;
--(void) addToList: (NSNumber *)num;
 
+-(void) addToList: (NSNumber *)num;
+-(void)printFront;
+-(void)printBack;
 
 @end
